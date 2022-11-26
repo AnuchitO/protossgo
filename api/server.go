@@ -5,9 +5,22 @@ import (
 	"net/http"
 )
 
+// todo
+/*
+{
+		"id": 0,
+    "title": "buy new ipad",
+    "status": "active"
+  }
+*/
+
+var id int
+var title string
+var status string
+
 func handler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
-		body := []byte(`{"message": "AnuchitO"}`)
+		body := []byte(s)
 		w.WriteHeader(http.StatusOK)
 		w.Write(body)
 		return
